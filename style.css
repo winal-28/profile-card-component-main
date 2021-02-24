@@ -13,8 +13,8 @@ body {
   justify-content: center;
   overflow: hidden;
   position: relative;
-  background: url(./images/bg-pattern-top.svg) top -520px left -230px no-repeat,
-    url(./images/bg-pattern-bottom.svg) bottom -585px right -250px no-repeat;
+  background: url(./images/bg-pattern-top.svg) top -520px left -280px no-repeat,
+    url(./images/bg-pattern-bottom.svg) bottom -700px right -250px no-repeat;
 }
 
 .name,
@@ -85,21 +85,26 @@ body {
   letter-spacing: 2px;
 }
 
-section .background {
-  height: 100%;
-  width: 100%;
-  overflow: hidden;
-  position: relative;
+.attribution {
+  position: absolute;
+  bottom: 0;
+  color: rgba(245, 245, 245, 0.699);
+  padding: 10px;
 }
 
-section .background div:nth-of-type(1) {
-  position: absolute;
-  top: -425px;
-  left: -350px;
+.attribution a {
+  color: white;
+  text-decoration: none;
+  transition: all 0.3s ease;
 }
 
-section .background div:nth-of-type(2) {
-  position: absolute;
-  bottom: -550px;
-  right: -300px;
+.attribution a:hover {
+  color: lightblue;
+}
+@media screen and (max-width: 900px) {
+  body {
+    background: url(./images/bg-pattern-top.svg) top -620px left -680px
+        no-repeat,
+      url(./images/bg-pattern-bottom.svg) bottom -620px right -680px no-repeat;
+  }
 }
