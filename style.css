@@ -29,6 +29,7 @@ body {
   display: flex;
   flex-direction: column;
   background: url("./images/bg-pattern-card.svg") no-repeat;
+  background-size: 100%;
   background-color: whitesmoke;
   width: 50vh;
   border-radius: 15px;
